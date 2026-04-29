@@ -42,10 +42,6 @@ string Voice_recoding::getRecodingDate() const {
 
 void Voice_recoding::showInfo() const {
 
-    cout << "\n=====================================\n";
-    cout << "            АУДІОЗАПИС \n";
-    cout << "=====================================\n";
-
     cout << "Спікер            : " << speaker << endl;
     cout << "Тривалість        : " << duration / 60
      << " хв " << duration % 60 << " сек" << endl;

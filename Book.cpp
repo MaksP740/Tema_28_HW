@@ -52,10 +52,6 @@ void Book::setIsbn(long isbn) {
 
 void Book::showInfo() const {
 
-    cout << "\n=====================================\n";
-    cout << "               КНИГА\n";
-    cout << "=====================================\n";
-
     cout << "Автор              : " << author << endl;
     cout << "Видання            : " << edition << endl;
     cout << "Дата публікації    : " << pubDate << endl;
