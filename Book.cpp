@@ -4,6 +4,13 @@
 
 #include "Book.h"
 
+Book::Book() {
+    author = "Невідомо";
+    edition = "Невідомо";
+    pubDate = "Невідомо";
+    isbn = 0;
+}
+
 Book::Book(string author, string edition, string pubDate, long isbn) {
     this->author = author;
     this->edition = edition;
@@ -43,7 +50,7 @@ void Book::setIsbn(long isbn) {
     this->isbn = isbn;
 }
 
-void Book::showBook() const {
+void Book::showInfo() const {
 
     cout << "\n=====================================\n";
     cout << "               КНИГА\n";

@@ -18,6 +18,7 @@ protected:
     long isbn;
 
 public:
+    Book();
     Book(string author, string edition, string pubDate, long isbn);
 
     string getAuthor() const;
@@ -30,7 +31,7 @@ public:
     void setPubDate(string pubDate);
     void setIsbn(long isbn);
 
-    void showBook() const;
+    void showInfo() const;
 
 };
 

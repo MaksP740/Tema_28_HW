@@ -2,6 +2,7 @@
 #include "PassengerCar.h"
 #include "TruckCar.h"
 #include "Book.h"
+#include "Voice_recoding.h"
 #include <ctime>
 
 #define mod 2
@@ -28,8 +29,10 @@ int main() {
 #elif mod == 2
 
     Book c("Тарас Шевченко", "Кобзар", "01.01.2019", 9781112223334);
+    c.showInfo();
 
-    c.showBook();
+    Voice_recoding rec1("Іван", 90, "28.02.2026");
+    rec1.showInfo();
 
 #endif
 
